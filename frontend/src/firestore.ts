@@ -1,6 +1,7 @@
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from "./firebaseConfig";
 
+// Reference to the "events" collection in Firestore
 const eventsCollection = collection(db, "events");
 
 // Function to add a new event

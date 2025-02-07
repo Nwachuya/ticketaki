@@ -5,12 +5,14 @@ import Dashboard from "./components/Dashboard";
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<AuthForm />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
+    <div className="bg-green-200 min-h-screen flex items-center justify-center">
+      <Router>
+        <Routes>
+          <Route path="/" element={<AuthForm />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 
